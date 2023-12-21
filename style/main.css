@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  gap: 0.625rem;
+  place-content: center;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: black;
+}
+body h1 {
+  text-align: center;
+  font: bold 1.25rem "Kumbh sans";
+  color: white;
+}
+
+form {
+  min-width: 250px;
+  width: 70vw;
+  max-width: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 10px;
+  border: 2px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+form input {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 0.5em;
+}
+form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+form ul li {
+  font-size: 0.8rem;
+  color: red;
+}
+form ul li::before {
+  content: "+";
+  margin-right: 0.25rem;
+  color: red;
+}
+form ul .ok {
+  color: green;
+}
+form ul .ok::before {
+  content: "-" !important;
+  color: green;
+}
+form button {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #000;
+  color: white;
+  font: bold 1rem "Kumbh Sans";
+}/*# sourceMappingURL=main.css.map */
