@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Validar Senha</h1>
-    <form>
+    <form onsubmit="prevent()">
         <input type="password" id="password" name="password">
         <ul>
             <li>8 caracteres</li>
@@ -18,7 +18,7 @@
             <li>Números</li>
             <li>Símbolos</li>
         </ul>
-        <button onclick="confirmar()">Confirmar</button>
+        <button type="submit" id="confirm">Confirmar</button>
     </form>
 </body>
 </html>

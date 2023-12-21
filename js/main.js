@@ -1,6 +1,6 @@
 let retornoUser = [...document.querySelectorAll("ul>li")]
 let inputSenha = document.querySelector("input")
-console.log(retornoUser)
+const confirm = document.querySelector("#confirm")
 
 inputSenha.addEventListener('input', (valorSenha)=>{
     let senha = valorSenha.target.value
@@ -36,14 +36,17 @@ inputSenha.addEventListener('input', (valorSenha)=>{
     
 })
 
-function confirmar(){
+confirm.addEventListener('click', (e)=>{
     retornoUser = retornoUser.filter((li)=>{
-        li.classList.contains("ok")
+        return li.classList.contains("ok")
     })
 
-    if(retornoUser<5){
+    console.log(retornoUser)
+
+    if(retornoUser<4){
         alert("A senha não cumpre os requisitos de segurança")
+        e.preventDefault()
     } else {
-        alert("Senha cumpre todos os recursos de segurança")
+        alert(" A senha cumpre todos os requisitos de segurança")
     }
-}
+})
